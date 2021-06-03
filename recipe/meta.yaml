@@ -12,15 +12,14 @@ source:
 
 build:
   number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [win]
 
 requirements:
   build:
-    - {{ compiler('fortran') }}        # [unix]
-    - {{ compiler('m2w64_fortran') }}  # [win]
-    - {{ compiler('c') }}              # [unix]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ compiler('cxx') }}            # [unix]
-    - {{ compiler('m2w64_cxx') }}      # [win]
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
     - python
     - pip
