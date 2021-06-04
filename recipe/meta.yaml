@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win]
 
@@ -40,5 +40,6 @@ test:
 
 about:
   home: https://github.com/oasys-kit/shadow3
-  license: UNKNOWN
+  license: MIT
+  license_file: LICENSE
   summary: SHADOW is an open source ray tracing code for modeling optical systems

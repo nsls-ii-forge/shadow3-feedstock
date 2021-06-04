@@ -3,7 +3,7 @@ About shadow3
 
 Home: https://github.com/oasys-kit/shadow3
 
-Package license: UNKNOWN
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/shadow3-feedstock/blob/master/LICENSE.txt)
 
